@@ -6,11 +6,15 @@ import { useDispatch } from "react-redux";
 import { trippyUserLogOut } from "../Redux/Features";
 
 import { Link } from "react-router-dom";
+import Api from "../Redux/Api";
+import Api2 from "../Redux/Api2";
 
 const Intro = () => {
     const dispatch = useDispatch();
     return (
         <div className="IntroBody">
+        <Api/>
+        <Api2/>
             <div className="IntroWrapper">
                 <div className="CenterDiv">
                     <Zoom>
