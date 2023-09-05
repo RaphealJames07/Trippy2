@@ -1,0 +1,675 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.HeaderNewBody{
+  width: 100%;
+  height: 100vh;
+  /* background: red; */
+  font-family: sans-serif;
+  margin-top: 80px;
+}
+
+.HeaderNewTopDiv{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.HeaderNewTopDivWrap{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderNewTopDivLeft{
+  width: 12%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderNewTopDivLeft img{
+  width: 60px;
+}
+
+.HeaderNewTopDiv nav {
+  width: 60%;
+  height: 70%;
+  position: relative;
+}
+
+.HeaderNewTopDiv nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.HeaderNewTopDiv nav ul .NavLink {
+  width: 18%;
+  height: 70%;
+  background: #80ddf0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #000;
+}
+
+.HeaderNewTopDiv nav ul .NavLink:hover {
+  width: 19%;
+  height: 72%;
+  background: #64c6da;
+}
+
+
+
+.HeaderNewTopDivRight{
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderNewTopNavs{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderNewTopHamBurgerMobile{
+  display: none;
+}
+
+.HeaderNewTopHamBurger{
+  display: none;
+}
+
+.HeaderNewTopDivRightCircle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.HeaderNewNavdivWrap{
+  width: 100%;
+  height: 100%;
+}
+
+.HeaderNewTopDiv nav .ItineraryPopUp{
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: #c1c1c1;
+  position:absolute;
+  right: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderNewTopDiv nav .ItineraryPopUp ul{
+  width: 80%;
+  height: 80%;
+  display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+}
+.HeaderNewTopDiv nav .ItineraryPopUp ul .NavLink{
+  width: 100%;
+ height: 27%;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.BiUserCircle{
+  width: 40px;
+  height: 40px;
+}
+
+.HeaderAccPopUp{
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  background: #ffffff;
+  top: 80px;
+  right: 30px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.HeaderAccPopUpTop{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.HeaderAccPopUpTopIcon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #9ddeec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderAccPopUpTopText{
+  width: 70%;
+  height: 100%;
+}
+
+.HeaderAccPopUpDown{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.HeaderAccPopUpDown ul{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HeaderAccPopUpDown ul li,.li{
+  width: 100%;
+  height: 30%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #f5f0f0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding-left: 10px;
+  border-radius: 7px;
+}
+
+.HeaderAccPopUpDownBtns{
+  height: 30%;
+  width: 100%;
+  /* background: #000; */
+}
+
+.HeaderAccPopUpDownBtns1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.HeaderAccPopUpDownBtns1 button{
+  width: 60%;
+  height: 70%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  /* background: #000; */
+}
+
+/* .HeaderAccPopUpDown button{
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+  background: #9ddeec;
+  font-size: 16px;
+} */
+
+.HeaderAccPopUpDownBtns2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+.HeaderAccPopUpDownBtns2 a{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.HeaderAccPopUpDownBtns2 button{
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
+
+
+.FadeBody{
+  width: 100%;
+  height: 90%;
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 428px){
+  
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .HeaderNewBody{
+    width: 100%;
+    height: 100vh;
+    /* background: red; */
+    font-family: sans-serif;
+    margin-top: 0;
+  }
+  
+  .HeaderNewTopDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.3s;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .HeaderNewTopDivWrap{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .HeaderNewTopDivLeft{
+    width: 12%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .HeaderNewTopDivLeft img{
+    width: 50px;
+  }
+  
+  .HeaderNewTopDiv nav {
+    width: 60%;
+    height: 70%;
+    position: relative;
+    display: none;
+  }
+
+  .HeaderNewTopNavs{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .HeaderNewTopHamBurger{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .HeaderNewTopHamBurgerMobile{
+    display: block;
+  }
+
+  .GiHamburgerMenu{
+    display: block;
+    width: 38px;
+    height: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+    .HeaderLoneNavBody{
+      width: 100%;
+      height: 60vh;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: all 0.5s;
+    }
+
+    .HeaderLoneNavTop{
+      width: 100%;
+      height: 15%;
+      background: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+    .HeaderLoneNavTop img{
+      width: 18%;
+    }
+    .HeaderLoneNavTop .TbLetterX{
+      width: 30px;
+      height: 30px;
+    }
+
+    .HeaderLoneNavDown{
+      width: 100%;
+      height: 75%;
+    }
+    
+    .HeaderLoneNavDown ul{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .HeaderLoneNavDown ul .HeaderLoneNavDownLinks{
+      width: 100%;
+      height: 13%;
+      background: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .HeaderLoneNavDown ul .HeaderLoneNavDownLinks li{
+      list-style: none;
+      font-size: 20px;
+    }
+  
+  .HeaderNewTopDiv nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  .HeaderNewTopDiv nav ul .NavLink {
+    width: 18%;
+    height: 70%;
+    background: #80ddf0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .HeaderNewTopDiv nav ul .NavLink:hover {
+    width: 19%;
+    height: 72%;
+    background: #64c6da;
+  }
+  
+  
+  
+  .HeaderNewTopDivRight{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .HeaderNewTopDivRightCircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+  
+  .HeaderNewNavdivWrap{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .HeaderNewTopDiv nav .ItineraryPopUp{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: #c1c1c1;
+    position:absolute;
+    right: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .HeaderNewTopDiv nav .ItineraryPopUp ul{
+    width: 80%;
+    height: 80%;
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: column;
+  }
+  .HeaderNewTopDiv nav .ItineraryPopUp ul .NavLink{
+    width: 100%;
+   height: 27%;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .BiUserCircle{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .HeaderAccPopUp{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background: #ffffff;
+    top: 80px;
+    right: 30px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+  
+  .HeaderAccPopUpTop{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .HeaderAccPopUpTopIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #9ddeec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .HeaderAccPopUpTopText{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .HeaderAccPopUpTopText p{
+    width: 70%;
+    height: 100%;
+    display: none;
+  }
+  
+  .HeaderAccPopUpDown{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .HeaderAccPopUpDown ul{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .HeaderAccPopUpDown ul li{
+    width: 100%;
+    height: 30%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #f5f0f0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding-left: 10px;
+    border-radius: 7px;
+  }
+  
+  .HeaderAccPopUpDownBtns{
+    height: 30%;
+    width: 100%;
+    /* background: #000; */
+  }
+  
+  .HeaderAccPopUpDownBtns1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .HeaderAccPopUpDownBtns1 button{
+    width: 60%;
+    height: 70%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background: #000; */
+  }
+  
+  /* .HeaderAccPopUpDown button{
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
+    background: #9ddeec;
+    font-size: 16px;
+  } */
+  
+  .HeaderAccPopUpDownBtns2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .HeaderAccPopUpDownBtns2 a{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .HeaderAccPopUpDownBtns2 button{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  
+  
+  
+  
+  .FadeBody{
+    width: 100%;
+    height: 90%;
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+ 
+}
+
+/* End of Media Query Styling for Mobile Device */
